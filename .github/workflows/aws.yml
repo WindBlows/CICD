@@ -94,6 +94,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: fargate-service
-        cluster: default
+        service: hello
+        cluster: spring
         wait-for-service-stability: true
